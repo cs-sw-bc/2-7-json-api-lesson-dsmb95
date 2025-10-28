@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON Basics</title>
+</head>
+<body>
+  <h1>🧠 Understanding JSON</h1>
+  <p>Open your browser console (Ctrl + Shift + J) to see the output.</p>
+
+  <script>
+    /* 
+      ✏️ Pencils Down: Let's understand what JSON looks like.
+      
+      JSON (JavaScript Object Notation) is a lightweight data format 
+      used to share information between computers.
+      
+      It looks like JavaScript objects, but in reality:
+      - All keys and string values are inside double quotes.
+      - It can contain: strings, numbers, booleans, arrays, and objects.
+    */
+
+    // Step 1️⃣: Create a sample JSON as a string (how APIs usually send it)
+    const jsonData = `{
+      "name": "Whiskers",
+      "age": 3,
+      "isFriendly": true,
+      "favoriteFoods": ["tuna", "salmon", "catnip"],
+      "owner": {
+        "firstName": "Alex",
+        "lastName": "Ramos",
+        "petsOwned": 2
+      }
+    }`;
+
+    console.log("Raw JSON (as text):");
+    console.log(jsonData);
+
+    // Step 2️⃣: Parse JSON string into a JavaScript object
+    /* 
+      Step 3️⃣: Access values from JSON
+      (Now it behaves just like a JavaScript object)
+    */
+    
+    /*Modify some value in the JSON*/
+
+    /* 
+      Step 4️⃣: Convert JS object back to JSON (stringify)
+      APIs need JSON format to send data over the internet.
+    */
+
+
+    /*
+      ✅ Recap:
+      JSON.parse()   → Converts JSON string → JS object
+      JSON.stringify() → Converts JS object → JSON string
+    */
+  </script>
+</body>
+</html>
